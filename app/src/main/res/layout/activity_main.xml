@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@drawable/portada1" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/reproducir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/detener"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/siguiente"
+        app:layout_constraintStart_toEndOf="@+id/btnStop"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/anterior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="168dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
+
+</android.support.constraint.ConstraintLayout>
